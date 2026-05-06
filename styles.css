@@ -1792,6 +1792,11 @@ section {
     transform: translateX(0);
   }
 
+  .nav:has(.nav__links.open) {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
   .nav__links .nav__link {
     font-size: 1.5rem;
     font-family: var(--font-display);
